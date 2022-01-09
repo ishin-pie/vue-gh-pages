@@ -35,6 +35,10 @@ import Skills from '../components/Skills.vue'
 
 export default {
   name: 'Home',
+  metaInfo: {
+    title: 'Home',
+    titleTemplate: '%s | Ishin Vin'
+  },
   components: {
     Profile,
     TextWriter,
