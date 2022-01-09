@@ -1,7 +1,9 @@
 <template>
   <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
     <v-main>
-      <router-view />
+      <v-container class="wrapper px-16" style="max-width: 980px">
+        <router-view />
+      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -19,5 +21,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
+}
+.wrapper {
+  background-color: #1e1e1e;
 }
 </style>
