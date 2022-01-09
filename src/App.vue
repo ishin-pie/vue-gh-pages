@@ -1,7 +1,7 @@
 <template>
   <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
     <v-main>
-      <v-container class="wrapper px-16" style="max-width: 980px">
+      <v-container class="wrapper px-sm-16" style="max-width: 980px">
         <router-view />
       </v-container>
     </v-main>
