@@ -1,5 +1,8 @@
 <template>
-  <v-timeline reverse>
+  <v-timeline
+    :reverse="!$vuetify.breakpoint.xs"
+    :dense="$vuetify.breakpoint.xs"
+  >
     <v-timeline-item
       v-for="(item, i) in items"
       :key="i"
