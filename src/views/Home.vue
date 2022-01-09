@@ -20,7 +20,7 @@
     <work-experience />
     <div class="heading mt-4">Education</div>
     <education />
-    <div class="copyright">Copyright &copy;2022 - Ishin Vin</div>
+    <div class="copyright">Copyright&copy;2022 - Ishin Vin</div>
   </div>
 </template>
 
