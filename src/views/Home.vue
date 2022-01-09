@@ -13,8 +13,6 @@
     </text-writer>
     <p class="about-me">
       A talented software developer, with a strong educational background in computer programming, who has {{ getExpYears }}+ years' background in software development, both Backend and Frontend.
-      <br /><br />
-      A curious learner and team player searching for opportunity to utilize my technical competencies and working knowledge of software development to grow as a qualified Software Engineer.
     </p>
     <div class="heading">Skills</div>
     <skills />
