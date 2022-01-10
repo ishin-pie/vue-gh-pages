@@ -15,7 +15,7 @@
           v-text="item.year"
         ></span>
       </template>
-      <div class="py-4">
+      <div class="py-4" :class="{'text-left': $vuetify.breakpoint.xs}">
         <h3 :class="`font-weight-light ${randomColors[i]}--text`">
           {{item.title}}
         </h3>
@@ -23,7 +23,6 @@
           {{item.location}}
         </h4>
         <div v-html="item.description" class="blue-grey--text text--lighten-2"></div>
-        <!-- {{ randomColors }} -->
       </div>
     </v-timeline-item>
   </v-timeline>
