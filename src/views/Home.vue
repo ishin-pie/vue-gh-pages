@@ -65,7 +65,7 @@ export default {
 }
 .about-me {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
 }
 .copyright {
   margin-top: 120px;
