@@ -8,6 +8,16 @@
   </v-app>
 </template>
 
+<script>
+export default {
+  name: 'App',
+  metaInfo: {
+    title: 'Home',
+    titleTemplate: '%s | Ishin Vin'
+  }
+}
+</script>
+
 <style lang="scss">
 @font-face {
   font-family: "Monaco";

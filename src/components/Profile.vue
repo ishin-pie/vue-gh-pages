@@ -12,7 +12,7 @@
       <v-col cols="12" class="pt-0">
         <div class="full-name white--text">Ishin Vin</div>
         <text-writer
-          :typeArray="['Software Developer in Cambodia', 'Senior Frontend Developer @Soramitsu']"
+          :typeArray="['Software Developer in Cambodia']"
           tag="h3"
           textColor="#FFAB00"
         >
