@@ -52,11 +52,8 @@ export default {
 
 <style lang="scss" scoped>
 .sub-heading {
-  // font-size: 1rem;
-  // font-weight: bold;
   padding-top: 16px;
   margin-bottom: 6px;
-  // padding-bottom: 4px;
 }
 .img-group {
   span {

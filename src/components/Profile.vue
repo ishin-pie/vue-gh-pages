@@ -2,7 +2,6 @@
   <div class="profile">
     <v-row>
       <v-col cols="12">
-        <!-- :style="getComputedStyle" -->
         <v-avatar size="150" class="profile-avatar">
           <img
             src="https://avatars.githubusercontent.com/u/63244532?v=4"
@@ -17,9 +16,6 @@
           tag="h5"
           textColor="#66D9EF"
         >
-          <!-- <template #after>
-            <span style="font-size: 12px;">🇰🇭</span>
-          </template> -->
         </text-writer>
       </v-col>
       <v-col>
@@ -40,34 +36,7 @@ export default {
   name: 'Profile',
   components: {
     TextWriter
-  },
-  data () {
-    return {
-      // interval: null,
-      // colors: ['#D32F2F', '#E91E63', '#9C27B0', '#3F51B5', '#2196F3', '#00BCD4', '#009688', '#4CAF50', '#CDDC39', '#FFC107', '#607D8B', '#9E9E9E'],
-      // randomColors: null
-    }
-  },
-  mounted () {
-    // this.getColors()
-  },
-  computed: {
-    // getComputedStyle () {
-    //   return {
-    //     borderColor: this.randomColors
-    //   }
-    // }
-  },
-  methods: {
-    // getColors () {
-    //   this.interval = setInterval(() => {
-    //     this.randomColors = this.colors[Math.floor(Math.random() * this.colors.length)]
-    //   }, 1000)
-    // }
   }
-  // beforeDestroy () {
-  //   clearInterval(this.interval)
-  // }
 }
 </script>
 

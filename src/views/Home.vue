@@ -2,15 +2,6 @@
   <div class="home">
     <profile class="mt-12" />
     <v-divider class="my-8" />
-    <!-- <text-writer
-      :typeArray="['fun!', 'awesome!', 'life!']"
-      textColor="#C62828"
-      class="pb-4"
-    >
-      <template #before>
-        <span>Coding is </span>
-      </template>
-    </text-writer> -->
     <p class="about-me">
       A talented software developer, with a strong educational background in computer programming, who has {{ getExpYears }}+ years' background in software development, both Backend and Frontend.
     </p>
@@ -26,7 +17,6 @@
 
 <script>
 import Profile from '../components/Profile.vue'
-// import TextWriter from '../components/TextWriter.vue'
 import WorkExperience from '../components/WorkExperience.vue'
 import Education from '../components/Education.vue'
 import Skills from '../components/Skills.vue'
@@ -38,7 +28,6 @@ export default {
   },
   components: {
     Profile,
-    // TextWriter,
     WorkExperience,
     Education,
     Skills
