@@ -2,7 +2,7 @@
   <div class="home">
     <profile class="mt-12" />
     <v-divider class="my-8" />
-    <text-writer
+    <!-- <text-writer
       :typeArray="['fun!', 'awesome!', 'life!']"
       textColor="#C62828"
       class="pb-4"
@@ -10,23 +10,23 @@
       <template #before>
         <span>Coding is </span>
       </template>
-    </text-writer>
+    </text-writer> -->
     <p class="about-me">
       A talented software developer, with a strong educational background in computer programming, who has {{ getExpYears }}+ years' background in software development, both Backend and Frontend.
     </p>
+    <div class="heading">Work Experiences</div>
+    <work-experience />
+    <div class="heading">Education</div>
+    <education />
     <div class="heading">Skills</div>
     <skills />
-    <div class="heading mt-4">Work Experiences</div>
-    <work-experience />
-    <div class="heading mt-4">Education</div>
-    <education />
-    <div class="copyright">Copyright&copy;2022 - Ishin Vin</div>
+    <p class="copyright">Copyright&copy;2022 - Ishin Vin</p>
   </div>
 </template>
 
 <script>
 import Profile from '../components/Profile.vue'
-import TextWriter from '../components/TextWriter.vue'
+// import TextWriter from '../components/TextWriter.vue'
 import WorkExperience from '../components/WorkExperience.vue'
 import Education from '../components/Education.vue'
 import Skills from '../components/Skills.vue'
@@ -38,7 +38,7 @@ export default {
   },
   components: {
     Profile,
-    TextWriter,
+    // TextWriter,
     WorkExperience,
     Education,
     Skills
@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     getExpYears () {
-      return this.current.getFullYear() - 2019
+      return this.current.getFullYear() - 2017
     }
   }
 }
@@ -58,15 +58,18 @@ export default {
 
 <style lang="scss" scoped>
 .heading {
-  font-size: 22px;
+  font-size: 16px;
   padding-top: 48px;
-  color: #FFAB00;
+  color: #FC929E;
+  // color: #66D9EF;
+  // color: #A6E22E;
 }
 .about-me {
   margin: 0 auto;
   width: 90%;
 }
 .copyright {
+  font-size: 12px;
   margin-top: 120px;
   margin-bottom: 32px;
 }

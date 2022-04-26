@@ -3,26 +3,25 @@
     :reverse="!$vuetify.breakpoint.xs"
     :dense="$vuetify.breakpoint.xs"
   >
+    <!-- :color="randomColors[i]" -->
     <v-timeline-item
       v-for="(item, i) in items"
       :key="i"
-      :color="randomColors[i]"
+      color="white"
       small
     >
       <template v-slot:opposite>
-        <span
-          :class="`font-weight-bold ${randomColors[i]}--text`"
-          v-text="item.year"
-        ></span>
+        <!-- :class="`font-weight-bold ${randomColors[i]}--text`" -->
+        <span v-text="item.year"></span>
       </template>
-      <div class="py-4" :class="{'text-left': $vuetify.breakpoint.xs}">
-        <h3 :class="`font-weight-light ${randomColors[i]}--text`">
+      <div :class="{'text-left': $vuetify.breakpoint.xs}">
+        <p>
           {{item.title}}
-        </h3>
-        <h4 class="font-weight-bold mb-4">
+        </p>
+        <p style="color: #E6DB74">
           {{item.location}}
-        </h4>
-        <div v-html="item.description" class="blue-grey--text text--lighten-2"></div>
+        </p>
+        <p v-html="item.description" style="color: #B2B2B2"></p>
       </div>
     </v-timeline-item>
   </v-timeline>
@@ -39,27 +38,27 @@ export default {
   },
   data () {
     return {
-      interval: null,
-      colors: ['cyan', 'green', 'pink', 'orange', 'lime', 'light-blue', 'teal', 'amber', 'red', 'blue-grey', 'brown', 'grey', 'indigo'],
-      randomColors: []
+      // interval: null
+      // colors: ['cyan', 'green', 'pink', 'orange', 'lime', 'light-blue', 'teal', 'amber', 'red', 'blue-grey', 'brown', 'grey', 'indigo'],
+      // randomColors: []
     }
   },
   mounted () {
-    this.getColors()
+    // this.getColors()
   },
   methods: {
-    getColors () {
-      this.interval = setInterval(() => {
-        const temp = [];
-        [...Array(this.items.length)].forEach((_, i) => {
-          temp.push(this.colors[Math.floor(Math.random() * this.colors.length)])
-        })
-        this.randomColors = temp
-      }, 1000)
-    }
-  },
-  beforeDestroy () {
-    clearInterval(this.interval)
+    // getColors () {
+    //   this.interval = setInterval(() => {
+    //     const temp = [];
+    //     [...Array(this.items.length)].forEach((_, i) => {
+    //       temp.push(this.colors[Math.floor(Math.random() * this.colors.length)])
+    //     })
+    //     this.randomColors = temp
+    //   }, 1000)
+    // }
   }
+  // beforeDestroy () {
+  //   clearInterval(this.interval)
+  // }
 }
 </script>

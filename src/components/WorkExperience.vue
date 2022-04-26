@@ -13,9 +13,17 @@ export default {
   data: () => ({
     items: [
       {
-        year: '2021 - present',
+        year: '2022 - present',
+        title: 'Application Integration Engineer',
+        location: '@J Trust Royal Bank',
+        description: `
+            Focus on Javascript, Typescript and Spring Boot.<br />
+        `
+      },
+      {
+        year: '2021 - 2022',
         title: 'Senior Software Developer',
-        location: 'Soramitsu Khmer Co., Ltd',
+        location: '@Soramitsu Khmer Co., Ltd',
         description: `
             Develop web service (REST api) using Kotlin with Spring Boot.<br />
             Develop web applications using Vuejs.<br />
@@ -25,7 +33,7 @@ export default {
       {
         year: '2020 - 2021',
         title: 'Back-End Developer Lead',
-        location: 'Pi Pay PLC',
+        location: '@Pi Pay PLC',
         description: `
           Develop and maintain in-house back-end system of Pi Pay project.<br />
           Collaborate with mobile developers for feature improvement.
@@ -34,7 +42,7 @@ export default {
       {
         year: '2016 - 2017',
         title: 'Associate Software Engineer',
-        location: 'DMI Phnom Penh',
+        location: '@DMI',
         description: `
           Develop web service (REST api) using Java with Spring Framework.<br />
           Develop web applications (front-end).

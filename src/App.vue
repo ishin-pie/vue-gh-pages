@@ -1,7 +1,8 @@
 <template>
-  <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
+  <!-- <v-app :style="{ background: $vuetify.theme.themes.dark.background }"> -->
+  <v-app>
     <v-main>
-      <v-container class="wrapper px-sm-16" style="max-width: 980px">
+      <v-container class="wrapper px-sm-16" style="max-width: 1080px">
         <router-view />
       </v-container>
     </v-main>
@@ -32,7 +33,10 @@ export default {
   text-align: center;
   color: #fff;
 }
-.wrapper {
-  background-color: #1e1e1e;
+p, span {
+  font-size: 14px;
 }
+// .wrapper {
+//   background-color: #1e1e1e;
+// }
 </style>
