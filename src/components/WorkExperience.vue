@@ -23,7 +23,7 @@ export default {
       {
         year: '2021 - 2022',
         title: 'Senior Software Developer',
-        location: '@Soramitsu Khmer Co., Ltd',
+        location: '@Soramitsu Khmer',
         description: `
             Develop web service (REST api) using Kotlin with Spring Boot.<br />
             Develop web applications using Vuejs.<br />
@@ -33,7 +33,7 @@ export default {
       {
         year: '2020 - 2021',
         title: 'Back-End Developer Lead',
-        location: '@Pi Pay PLC',
+        location: '@Pi Pay',
         description: `
           Develop and maintain in-house back-end system of Pi Pay project.<br />
           Collaborate with mobile developers for feature improvement.
